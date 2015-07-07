@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -61,7 +60,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#home">KITT.AI | Natural Language Understanding Made Easy</a>
+            <a class="navbar-brand page-scroll" href="/#home">KITT.AI | Natural Language Understanding Made Easy</a>
             <!-- <a class="navbar-brand page-scroll" href="#home">
                 <img src="http://kitt.ai/assets/img/blue-logo-small.png" alt="">
             </a> -->
@@ -73,8 +72,21 @@
             	<li>
                     <a class="page-scroll" href="/#about">Technologies</a>
                 </li>            
-                <li>
-                    <a class="page-scroll" href="/#products">Products</a>
+                <li class="dropdown">
+                    <a href="/#products" class="dropdown-toggle page-scroll"
+                       data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Products<span class="caret"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="/#products">Overview</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="http://parsetron.kitt.ai">Parsetron</a></li>
+                        <!--<li><a href="http://tweetbulb.kitt.ai">TweetBulb</a></li>-->
+                        <li><a>TweetBulb</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="disabled"><a>Answertron</a></li>
+                        <li class="disabled"><a>Snowboy</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a class="page-scroll" href="#footer">Contact</a>
@@ -99,16 +111,51 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<section id="tweetbulb-home">
+<!-- Header -->
+<div class="tweetbulb-header">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1><div><span style="color:#ff0000;">T</span><span style="color:#ff7f00;">w</span><span style="color:#ffff00;">e</span><span style="color:#00ff00;">e</span><span style="color:#00ffff;">t</span><span style="color:#0000ff;">B</span><span style="color:#8b00ff;">u</span><span style="color:#ff0000;">l</span><span style="color:#ff7f00;">b</span></div></h1>
+                    <h3>tweet to control our smart lights</h3>
+                    <h4>then watch them on YouTube live stream</h4>
+                    <hr class="intro-divider">
+                    <h5>Powered by Natural Language Understanding Technologies from KITT.AI</h5>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12 center-block bottom-align">
+                  <a href="#tweetbulb-social" class="page-scroll btn btn-circle btn-dark" role="button">
+                    <i class="fa fa-angle-double-down animated"></i>
+                  </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.tweetbulb-header -->
+</section>
+
+
 <section id="tweetbulb-social">
 <div class="intro-about">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="text-primary">Control Our Smart Lights with a Message<br>
+                <h2 class="text-primary">Control TweetBulb with a Message<br>
                     <small>on Facebook or Twitter</small></h2>
             </div>
         </div>
-        <br/> <br/> <br/> <br/>
+        <br/> <br/>
 
         <div class="row">
 
@@ -127,26 +174,33 @@
             </div>
 
             <div class="col-lg-3 col-sm-3 text-left">
-                Names of our lightbulbs:
+                Names of our light bulbs:
                 <br>
+                <i class="fa fa-lightbulb-o fa-2x" style="color: red"></i> <span class="text-primary"><b>left</b></span>
+                <i class="fa fa-lightbulb-o fa-2x" style="color: blue"></i> <span class="text-primary"><b>middle</b></span>
+                <i class="fa fa-lightbulb-o fa-2x" style="color: orange"></i> <span class="text-primary"><b>right</b></span>
+
+                <br>
+                <br>
+
+                They can:
                 <br>
                 <div class="text-left">
                     <ul>
-                        <li><i class="fa fa-lightbulb-o fa-2x" style="color: red"></i> <span class="text-primary"><b>top</b></span></li>
-                        <li><i class="fa fa-lightbulb-o fa-2x" style="color: green"></i> <span class="text-primary"><b>middle</b></span></li>
-                        <li><i class="fa fa-lightbulb-o fa-2x" style="color: blue"></i> <span class="text-primary"><b>bottom</b></span></li>
+                        <li>turn on/off, and blink</li>
+                        <li>display 16 million different colors each</li>
+                        <li>understand common colors of half a million things</li>
                     </ul>
                 </div>
                 <br> <br>
-
 
                 <small>Something you can do:</small>
                 <br>
                 <div class="text-left">
                     <ul>
-                        <li><span class="text-info"><small>change <span class="text-primary">top</span> light to
+                        <li><span class="text-info"><small>change <span class="text-primary">left</span> light to
                             <span style="color: red">red</span> and <span class="text-primary">middle</span> light to
-                            <span style="color: purple">purple</span> and <span class="text-primary">bottom</span> light to
+                            <span style="color: purple">purple</span> and <span class="text-primary">right</span> light to
                             <span style="color: blue">bluish</span></small>
                         </span></li>
                         <li><span class="text-info"><small>Give me a romantic theme!</small></span></li>
@@ -154,17 +208,7 @@
                     </ul>
                 </div>
 
-                <small>Something you can't:</small>
-                <br>
-                <div class="text-left">
-                    <ul>
-                        <li><span class="text-muted"><small>blink all lights
-                            <span class="text-danger">5 million times</span> and burn!</small></span></li>
-                        <li><span class="text-muted"><small>I want a
-                            <span class="text-danger">black/gray color</span></small></span></li>
-                        <li><span class="text-muted"><small>How many *** to change a lightbulb?</small></span></li>
-                    </ul>
-                </div>
+
             </div>
 
             <div class="col-lg-4 col-sm-4">
@@ -190,6 +234,16 @@
             </div>
 
         </div>
+
+        <div class="page-scroll text-center">
+            <div class="page-scroll">
+                <a href="#tweetbulb-youtube-embed" class="btn btn-circle btn-dark" role="button">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
+            Watch it on YouTube
+        </div>
+
     </div>
 </div>
 </section>
@@ -199,7 +253,7 @@
     <div class="content-section-a">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="text-primary">Watch TweetBulb Respond <br>
+                <h2 class="text-primary">Watch TweetBulb Respond To Natural Language <br>
                     <small>on 7x24 YouTube Live Stream</small></h2>
             </div>
         </div>
@@ -211,20 +265,25 @@
 
                 <ul>
                     <li>YouTube <span class="text-danger">delays</span> live streaming by roughly
-                        <span class="text-danger">25 to 40 seconds</span>.</li>
-                    <li>For best clarity, please watch under
+                        <span class="text-danger">25 to 40 seconds</span>.
+                        For best clarity, watch under
                         <span class="text-danger">720p<sup>HD</sup></span>.</li>
+                        <li><span style="color: orange">Orange is the New Black</span>: Lightbulbs <b>do not</b> display
+                            <span style="color: black">black</span>/<span style="color: black">gray</span> colors.
+                            We use <span style="color: orange"> orange </span> instead.
+                        </li>
                 </ul>
                 </p>
             </div>
             </div>
         </div>
 
-        <br/> <br/>
+        <br/>
 
         <div class="text-center">
             <iframe width="853" height="480" src="https://www.youtube.com/embed/FY6RxsRLlcU?rel=0" frameborder="0" allowfullscreen></iframe>
         </div>
+
     </div>
 
 </section>
@@ -234,15 +293,17 @@
     <div class="content-section-b">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="text-primary">TweetBulb runs on a Raspberry Pi 2<br>
-                    <small>KITT.AI is completed devoted to embedded devices</small></h2>
+                <h2 class="text-primary">TweetBulb runs on a Raspberry Pi<br>
+                    <small>Powered by our embedded semantic parser
+                        <a href="https://github.com/Kitt-AI/parsetron">Parsetron</a>
+                        (<a href="http://parsetron.kitt.ai">docs and tutorial</a>)</small>
+                </h2>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2">
-             <div class="text-left text-muted">
-            </div>
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                <img src="http://kitt.ai/assets/img/tweetbulb/tweetbulb-flowchart.jpg" alt="" class="img-responsive center-block shadowbox" />
             </div>
         </div>
 
@@ -289,7 +350,7 @@
                     <li><a href="mailto:"><i class="fa fa-envelope"></i></a>
                     </li>
                     -->
-                    <li><a href="/#contactForm" data-toggle="modal"><i class="fa fa-envelope"></i></a>
+                    <li><a href="mailto:info@kitt.ai" data-toggle="modal"><i class="fa fa-envelope"></i></a>
                     </li>
                 </ul>
             </div>
@@ -307,20 +368,6 @@
             </div>
         </div>
     </div>
-
-<div id="contactForm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <iframe src="https://docs.google.com/forms/d/1b5cptc5141WkS0tOnvgapIwUYNpsrmywN9s9Ab1Va7Q/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
 
 </footer>
 
@@ -350,7 +397,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-62235408-1', 'auto');
+  ga('create', 'UA-62235408-3', 'auto');
   ga('send', 'pageview');
 
 </script>
