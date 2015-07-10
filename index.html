@@ -229,8 +229,9 @@
             </div>
 
             <div class="col-lg-2 col-sm-2 text-left text-muted">
-                <h4>Don't feel like being social?</h4>
-                <p>Write an <i class="fa fa-envelope-o fa"></i> to <a href="mailto:tweetbulb@kitt.ai">tweetbulb@kitt.ai</a>
+                <h4 class="text-warning">Not feeling social?</h4>
+                <br>
+                <p class="text-info">Write an <i class="fa fa-envelope-o fa"></i> to <a href="mailto:tweetbulb@kitt.ai">tweetbulb@kitt.ai</a>
                 with your command in the <span class="text-danger">subject</span>.</p>
                 <p><small>Any message in the body will be <i>ignored</i>.</small></p>
 
@@ -273,29 +274,29 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#lightbulbintro" aria-expanded="false" aria-controls="collapseExample">
-                    Light bulbs Introduction
+                    Light bulbs Intro
                 </button>
-                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#samplecommands" aria-expanded="false" aria-controls="collapseExample">
-                    Sample Commands
+                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#samplecommands" aria-expanded="false" aria-controls="collapseExample">
+                    Do Something Simple
                 </button>
-                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#advancedusage" aria-expanded="false" aria-controls="collapseExample">
-                    Advanced Usage
+                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#advancedusage" aria-expanded="false" aria-controls="collapseExample">
+                    Teach Me Something Magical
                 </button>
                 <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#threelaws" aria-expanded="false" aria-controls="collapseExample">
                     Three Laws of Smart Light Bulbs
                 </button>
                 <div class="collapse" id="lightbulbintro">
                     <div class="well text-left">
-                         <h4>Names of our light bulbs:
+                         <h4 class="text-primary">Names of our light bulbs:
                              <i class="fa fa-lightbulb-o fa-2x" style="color: red"></i> <span class="text-primary"><b>left</b></span>
                              <i class="fa fa-lightbulb-o fa-2x" style="color: blue"></i> <span class="text-primary"><b>middle</b></span>
                              <i class="fa fa-lightbulb-o fa-2x" style="color: orange"></i> <span class="text-primary"><b>right</b></span>
                         </h4>
                          <br>
 
-                         They can:
+                         <h4 class="text-primary">They can:</h4>
                          <br>
-                         <div class="text-left">
+                         <div class="text-left text-muted">
                              <ul>
                                  <li>turn on/off, and blink</li>
                                  <li>display 16 million different colors each</li>
@@ -307,7 +308,7 @@
                 </div>
                  <div class="collapse" id="samplecommands">
                     <div class="well text-left">
-                         <h4>Something you can do:</h4>
+                         <h4 class="text-primary">Something you can do:</h4>
                          <br>
                          <div class="text-left">
                              <ul>
@@ -316,8 +317,11 @@
                                      <span style="color: purple">purple</span> and <span class="text-primary">right</span> light to
                                      <span style="color: blue">bluish</span>
                                  </span></li>
-                                 <li><span class="text-info">Give me a romantic theme!</span></li>
-                                 <li><span class="text-info">Go Seattle Seahawks!</span></li>
+                                 <li class="text-info">Blink all lights <span class="text-warning">five</span> times in <span style="color: red">red</span></li>
+                                 <li class="text-info">Give me a romantic theme!</li>
+                                 <li class="text-info">Go Seattle Seahawks!
+                                     <small>(<span class="text-danger">Go ***</span> is a special trigger to
+                                         flash all lights with the color of ***)</small></li>
                              </ul>
                          </div>
 
@@ -326,8 +330,27 @@
                 </div>
                 <div class="collapse" id="advancedusage">
                     <div class="well text-left">
-                        <h4></h4>
+                        <p class="text-muted">You can teach TweetBulb to do stuff you want! Use the following magic phrases:</p>
+                        <h4 class="text-primary text-center">When I say
+                            <span class="text-danger"><i>[something magical]</i></span> please
+                            <span class="text-info"><i>[do something specific]</i></span></h4>
+
                         <br>
+                        <p class="text-muted">for instance (in Twetter/Facebook/Email):</p>
+                          <div class="text-left">
+                                 <p class="text-primary text-center">When I say
+                                     <span class="text-danger"><i>Garfield</i></span> please
+                                     <span class="text-info"><i>blink all lights in orange</i></span></p>
+                                 <p class="text-primary text-center">When I say
+                                     <span class="text-danger"><i>USA flag</i></span> please
+                                     <span class="text-info"><i>turn all lights to blue white and red</i></span></p>
+                                 <p class="text-primary text-center">When I say
+                                     <span class="text-danger"><i>Bumblebee</i></span> please
+                                     <span class="text-info"><i>flash all lights three times in yellow</i></span></p>
+                                 <p class="text-muted">Then for instance, next time you tweet <span class="text-danger"><i>Bumblebee</i></span>
+                                     The lights will flash three times in yellow!</p>
+                         </div>
+
                     </div>
                 </div>
                 <div class="collapse" id="threelaws">
@@ -397,6 +420,9 @@
         </div>
 
         <br/> <br/>
+        <h4 class="text-center text-info">Questions? Drop us an <a href="mailto:info@kitt.ai">email</a>!</h4>
+        <br/> <br/>
+
 
     </div>
 
@@ -428,8 +454,8 @@
                 <p class="copyright text-center text-muted small">Copyright &copy; KITT.AI | Natural Language Understanding Made Easy All Rights Reserved</p>
             </div>
             <div class="col-md-4 text-center">
-                <ul class="list-inline social-icons icon-circle icon-zoom">
-                    <li><a href="https://twitter.com/kitt_ai"><i class="fa fa-twitter"></i></a>
+                <ul class="list-inline social-icons icon-circle icon-zoom with-bg">
+                    <li><a href="https://twitter.com/kitt_ai"><i class=" fa fa-twitter"></i></a>
                     </li>
                     <li><a href="https://github.com/Kitt-AI/"><i class="fa fa-github"></i></a>
                     </li>
